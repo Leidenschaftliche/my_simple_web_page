@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>
-		beautiful and simple website using html only -- fullywrold web tutorials
+		Menu Added
 	</title>
 
     <style>
@@ -12,6 +12,70 @@
       background-repeat:   no-repeat;
       background-position: center center;
     }
+		nav {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			width: 61.8%;
+			margin: 0 auto;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		nav li {
+			margin-right: 20px;
+			position: relative;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			display: block;
+			transition: background-color 0.3s ease;
+		}
+
+		nav ul ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: #555;
+			display: none;
+			z-index: 1;
+			min-width: 120px;
+			padding: 10px;
+		}
+
+		nav ul li:hover > ul {
+			background-color: #213;
+			font-size: x-large;
+			display: flex;
+			flex-direction: column;
+		}
+
+		nav ul ul li {
+			margin-right: 0;
+			margin-top: 10px;
+			position: relative;
+		}
+
+		nav ul ul li a {
+			padding: 5px;
+			color: yellow;
+			transition: background-color 0.3s ease;
+		}
+
+
+		nav ul ul ul {
+			left: 100%;
+			top: 0;
+		}
     </style>
 
 </head>
@@ -20,15 +84,28 @@
 	<br />
 	<h3 align="left" margin=20px>
 		<font face="Lato" size="6">LOGO</font>
- 	
+
 <font face="cinzel" size="4">
-			<p align="center">
-            <a href="#">HOME</a> 
-			<a href="#">VIDEOS</a> 
-			<a href="#">PORTFOLIO</a>
-			<a href="#">BLOG</a>
-			<a href="#">CONTACT US</a> </p>
+<nav>	
+<ul>
+            <li><a href="#">HOME</a> </li>
+			<li><a href="#">VIDEOS</a> </li>
+			
+			<li><a href="#">PORTFOLIO</a> 
+            
+			<ul>
+				<li><a href="#">Client 1</a></li>
+				<li><a href="#">Client 2</a></li>
+				<li><a href="#">Client 3</a></li>
+			</ul>
+			</li>
+
+			<li><a href="#">BLOG</a> </li>
+			<li><a href="#">CONTACT US</a> </li>
+</ul>
+</nav>
 		</font>
+
 	</h3>
 	<br /><br /><br /><br />
 	<h1 align="center">
@@ -38,16 +115,16 @@
 	</h1>
 	<h3 align="center">
 		<font face="Lato" color="#000" size="5">
-			USING HTML ONLY (NO CSS USED)
+			USING HTML ONLY (Only internal CSS is used.)
 		</font>       
     </h3>
     <br />
     <h1 align="center">
-       <video width="640" controls>
+       <video width="640" controls alt="Birds video">
             <source src="birds-57685.mp4" type="video/mp4">
             Your browser does not support the video tag.
        </video>
-       <video width="640" controls>
+       <video width="640" controls alt="Earth video">
             <source src="file_example_OGG_480_1_7mg.ogg" type="video/ogg">
             Your browser does not support the video tag.
        </video>
@@ -65,3 +142,4 @@
 	</h3>
 </body>
 </html>
+
